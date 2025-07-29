@@ -1,82 +1,105 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nama UMKM Anda - Solusi Terbaik untuk [Masalah Pelanggan]</title>
-    <meta name="description" content="Deskripsi singkat tentang apa yang ditawarkan oleh UMKM atau startup Anda.">
+    <title>Nama Jasa/Toko Anda - Layanan Profesional di Kota Anda</title>
+    <meta name="description" content="Kami menyediakan [jenis layanan atau produk] terbaik dengan sentuhan personal. Kunjungi kami atau hubungi sekarang!">
     
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     
     <style>
-        /* Menggunakan font Poppins jika diimpor */
+        /* Menggunakan font Roboto jika diimpor */
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-stone-100 text-stone-800">
 
-    <header class="bg-white shadow-md">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-indigo-600">NamaBrand</h1>
-            <a href="#kontak" class="bg-indigo-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-indigo-700 transition duration-300">Hubungi Kami</a>
-        </div>
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-stone-900">NamaBrand</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#layanan" class="text-stone-600 hover:text-stone-900 transition">Layanan</a>
+                <a href="#galeri" class="text-stone-600 hover:text-stone-900 transition">Galeri</a>
+                <a href="#kontak" class="text-stone-600 hover:text-stone-900 transition">Kontak</a>
+            </div>
+            <a href="#kontak" class="bg-amber-500 text-white font-bold px-5 py-2 rounded-full hover:bg-amber-600 transition duration-300">Pesan Sekarang</a>
+        </nav>
     </header>
 
-    <main class="container mx-auto px-6 py-16 text-center">
-        <h2 class="text-4xl md:text-5xl font-bold mb-4">Solusi Inovatif untuk Kebutuhan Anda</h2>
-        <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Kami membantu [target audiens Anda] untuk [mencapai tujuan mereka] melalui [produk atau layanan] berkualitas tinggi.</p>
-        <a href="#harga" class="bg-green-500 text-white font-bold px-8 py-3 rounded-full text-lg hover:bg-green-600 transition duration-300">Lihat Penawaran Spesial!</a>
-    </main>
+    <section class="relative h-[60vh] md:h-[70vh] flex items-center justify-center text-center text-white">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop');">
+            <div class="absolute inset-0 bg-black/50"></div>
+        </div>
+        <div class="relative z-10 p-6">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Kualitas & Rasa yang Bicara</h1>
+            <p class="text-lg md:text-xl mb-8">Nikmati [produk/layanan] terbaik yang dibuat khusus untuk Anda.</p>
+            <a href="#layanan" class="bg-white text-stone-900 font-bold px-8 py-3 rounded-full text-lg hover:bg-stone-200 transition duration-300">Lihat Layanan Kami</a>
+        </div>
+    </section>
 
-    <section id="fitur" class="bg-white py-20">
+    <section id="layanan" class="bg-white py-20">
         <div class="container mx-auto px-6">
-            <h3 class="text-3xl font-bold text-center mb-12">Kenapa Memilih Kami?</h3>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div class="p-6 border border-gray-200 rounded-lg">
-                    <div class="text-indigo-600 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                    </div>
-                    <h4 class="text-xl font-semibold mb-2">Kualitas Terjamin</h4>
-                    <p class="text-gray-600">Produk kami dibuat dari bahan terbaik dan proses yang terstandarisasi.</p>
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold">Layanan Unggulan Kami</h2>
+                <p class="text-stone-600 mt-2">Kami menawarkan solusi lengkap untuk kebutuhan Anda.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-stone-50 border border-stone-200 rounded-lg p-6 text-center hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-2">Nama Layanan/Produk 1</h3>
+                    <p class="text-stone-600 mb-4">Deskripsi singkat tentang layanan atau produk ini. Jelaskan manfaat utamanya.</p>
+                    <span class="font-bold text-amber-600">Mulai dari Rp XX.XXX</span>
                 </div>
-                <div class="p-6 border border-gray-200 rounded-lg">
-                    <div class="text-indigo-600 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-                    </div>
-                    <h4 class="text-xl font-semibold mb-2">Pelayanan Cepat</h4>
-                    <p class="text-gray-600">Kami merespon kebutuhan Anda dengan cepat dan efisien.</p>
+                <div class="bg-stone-50 border border-stone-200 rounded-lg p-6 text-center hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-2">Nama Layanan/Produk 2</h3>
+                    <p class="text-stone-600 mb-4">Deskripsi singkat tentang layanan atau produk ini. Jelaskan manfaat utamanya.</p>
+                    <span class="font-bold text-amber-600">Mulai dari Rp XX.XXX</span>
                 </div>
-                <div class="p-6 border border-gray-200 rounded-lg">
-                    <div class="text-indigo-600 mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01" /></svg>
-                    </div>
-                    <h4 class="text-xl font-semibold mb-2">Harga Terjangkau</h4>
-                    <p class="text-gray-600">Kualitas premium dengan harga yang tidak akan menguras kantong.</p>
+                <div class="bg-stone-50 border border-stone-200 rounded-lg p-6 text-center hover:shadow-lg transition">
+                    <h3 class="text-xl font-bold mb-2">Nama Layanan/Produk 3</h3>
+                    <p class="text-stone-600 mb-4">Deskripsi singkat tentang layanan atau produk ini. Jelaskan manfaat utamanya.</p>
+                    <span class="font-bold text-amber-600">Mulai dari Rp XX.XXX</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="harga" class="bg-indigo-600 text-white py-20">
-        <div class="container mx-auto px-6 text-center">
-            <h3 class="text-3xl font-bold mb-4">Siap untuk Memulai?</h3>
-            <p class="text-indigo-200 text-lg mb-8">Dapatkan penawaran eksklusif dengan menghubungi kami sekarang juga!</p>
-            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20produk%20Anda." target="_blank" class="bg-white text-indigo-600 font-bold px-8 py-3 rounded-full text-lg hover:bg-gray-100 transition duration-300">
-                Chat via WhatsApp
-            </a>
+    <section id="galeri" class="py-20 bg-stone-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Galeri Kami</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="https://images.unsplash.com/photo-1511920183353-3c9c614a6a5b?w=500" alt="Galeri 1" class="rounded-lg shadow-md aspect-square object-cover hover:scale-105 transition">
+                <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=500" alt="Galeri 2" class="rounded-lg shadow-md aspect-square object-cover hover:scale-105 transition">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500" alt="Galeri 3" class="rounded-lg shadow-md aspect-square object-cover hover:scale-105 transition">
+                <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=500" alt="Galeri 4" class="rounded-lg shadow-md aspect-square object-cover hover:scale-105 transition">
+            </div>
         </div>
     </section>
-    
-    <footer id="kontak" class="bg-gray-800 text-white py-10">
+
+    <section id="kontak" class="bg-amber-500 text-white">
+        <div class="container mx-auto px-6 py-20 text-center">
+            <h2 class="text-3xl font-bold mb-4">Tertarik dengan Layanan Kami?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">Jangan ragu untuk menghubungi kami. Klik tombol di bawah untuk terhubung langsung via WhatsApp atau temukan kami di lokasi.</p>
+            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Anda." target="_blank" class="bg-white text-amber-600 font-bold px-8 py-4 rounded-full text-lg hover:bg-stone-100 transition duration-300 inline-block mb-6">
+                💬 Hubungi via WhatsApp
+            </a>
+            <div class="text-center mt-4">
+                <h3 class="font-bold text-xl">Atau Kunjungi Kami di:</h3>
+                <p class="mt-2">Jalan Usaha Jaya No. 45, Kota Anda</p>
+                <p>Buka Setiap Hari: 09:00 - 21:00 WIB</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-400 py-6">
         <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 Nama UMKM Anda. Semua Hak Cipta Dilindungi.</p>
-            <p class="mt-2 text-gray-400">Jalan Contoh No. 123, Kota Anda, Indonesia</p>
+            <p>&copy; 2025 NamaBrand. Dibuat dengan ❤️ di Indonesia.</p>
         </div>
     </footer>
 
